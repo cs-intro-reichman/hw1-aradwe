@@ -11,7 +11,7 @@ public class Bill3 {
 		double amountPerPerson = Math.ceil((double) totalBillAmount / 3);
 		
 		// Format and print the finel output message
-		String messageTemplate = "Dear %s, %s and %s: pay %.1f Shekels each";
+		String messageTemplate = "Dear %s, %s, and %s: pay %.1f Shekels each";
 		String messageTemplateFormatted = String.format(messageTemplate, name3, name2, name1, amountPerPerson);
 		
 		System.out.println(messageTemplateFormatted);
