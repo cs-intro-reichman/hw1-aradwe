@@ -18,21 +18,27 @@ public class TimeFormat {
 		if (hours >= 12) {
 			period = "PM";
 		}
-		else period = "AM";
+		else {
+			period = "AM";
+		}
 
 		// Prepare hour output
 		String hourFormat;
 		if (hours > 12) {
 			hourFormat = String.valueOf(hours - 12); // Convert to 12-hour format
 		}
-		else hourFormat = String.valueOf(hours);
+		else {
+			hourFormat = String.valueOf(hours);
+		}
 
 		 // Format minutes with zero if needed
 		String minuteFormat;
 		if (minutes < 10) {
 			minuteFormat = "0" + minutes;			
 		}
-		else minuteFormat = String.valueOf(minutes);
+		else {
+			minuteFormat = String.valueOf(minutes);
+		}
 
 		// Print the final time in the new format
 		System.out.println(hourFormat + ":" + minuteFormat + " " + period);
