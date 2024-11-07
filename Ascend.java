@@ -3,9 +3,9 @@
 public class Ascend {
 	public static void main(String[] args) {
 		int randomNumMaxLimit = Integer.parseInt(args[0]);
-		int a = (int) (Math.random() * (randomNumMaxLimit + 1));
-		int b = (int) (Math.random() * (randomNumMaxLimit + 1));
-		int c = (int) (Math.random() * (randomNumMaxLimit + 1));
+		int a = (int) (Math.random() * randomNumMaxLimit);
+		int b = (int) (Math.random() * randomNumMaxLimit);
+		int c = (int) (Math.random() * randomNumMaxLimit);
 
 		int minNum = Math.min(a, Math.min(b, c));
 		int maxNum = Math.max(a, Math.max(b, c));
